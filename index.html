@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+
+    <html lang="en">
+
+        <head>
+            <meta charset="UTF-8">
+            <meta http-equiv="X-UA-Compatible" content="IE=edge">
+            <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <title>Document</title>
+            <link rel="stylesheet" href="./style.css">
+            <script src="./script.js" defer></script>
+        </head>
+
+        <body>
+        
+            <header draggable="false">Etch A Sketch</header>
+                
+            <div class="sketch" draggable="false">
+
+                <div class = "selector" draggable="false">
+                        
+                        <div draggable="false">
+                            <input type="color" id="pen" name="head">
+                            <label for = "head">Color Select</label>
+                        </div>
+
+                        <button onclick="colorSelect()" id="colorSelect" draggable="false">Pen</button>
+                        <button onclick="multiColor()" id="multiColor" draggable="false">Multicolor</button>
+                        <button onclick="eraser()" id="eraser" draggable="false">Eraser</button>
+                        <button onclick="clearColor()" draggable="false">Clear</button>
+                        
+                        <div class="slidecontainer">
+                            <input type="range" min="1" max="64" value="16" class="slider" id="myRange">
+                        </div>
+                </div>
+
+                <div id="grid" draggable="false">
+                    
+                </div>
+
+            </div>
+
+            <footer> The Odin Project <footer>
+
+        </body>
+
+</html>
